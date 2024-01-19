@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="imagens/starbucks-icon.png" type="image/x-icon">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <img src="imagens/star1.png" alt="main logo" class="logo">
+    <div class="conteudo">
+        <div class="texto">
+            <h2>Não é apenas café, é <span>Starbucks</span> </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repellat aliquam dolorem reiciendis beatae
+                harum
+                quisquam rerum? Maiores dicta consequatur voluptates eveniet minima iste, facere earum labore harum
+                dolorum
+                commodi?</p>
+            <button>Resgatar Cupom</button>
+        </div>
+        <div class="imagem"> <img src="imagens/star4.png" alt="" class="copo">
+        </div>
+    </div>
+    <div class="pequenoimagens">
+        <img src="imagens/star6.png" alt="" class="pequenos amarelo">
+        <img src="imagens/star5.png" alt="" class="pequenos rosa">
+        <img src="imagens/star7.png" alt="" class="pequenos verde">
+    </div>
+</body>
+<script>
+    let circulo = document.querySelector(".circulo")
+    let copoimg = document.querySelector(".copo")
+    let verde = document.querySelector(".verde")
+    let amarelo = document.querySelector(".amarelo")
+    let rosa = document.querySelector(".rosa")
+
+    rosa.addEventListener("click", () => {
+        copoimg.src = "./imagens/star2.png"
+        circulo.style.background = "#FF1493"
+    }) 
+   
+    verde.addEventListener("click", () => {
+        copoimg.src = "./imagens/star4.png"
+        circulo.style.background = "#017143"
+    }) 
+
+    amarelo.addEventListener("click", () => {
+        copoimg.src = "./imagens/star3.png"
+        circulo.style.background = "#eb7495"
+    }) 
+   
+</script>
+
+</html>

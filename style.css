@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* IMPORTANTE PARA TODO COMEÇO DE PROJETO, ZERA AS BORDAS E MARGENS DO NAVEGADOR */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+button {
+    background-color: #017143;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 500;
+
+}
+
+span {
+    color: #017143;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.copo {
+    width: 340px;
+    z-index: 2;
+}
+
+.pequenos {
+    width: 60px;
+    cursor:pointer;
+    transition: 1s;
+
+
+}
+.pequenos:hover {
+    transform: translateY(-25px)
+
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.texto {
+    width: 600px;
+}
+
+.imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.pequenoimagens {
+    display: flex;
+    justify-content:center;
+    
+    
+
+
+}
+
+.circulo {
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: 0;
+}
